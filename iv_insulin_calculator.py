@@ -1,6 +1,33 @@
 import streamlit as st
 import math
 
+st.set_page_config(page_title="IV Insulin Calculator", layout="centered")
+
+# Display auto-help on app start
+with st.expander("ℹ️ How to Use This App", expanded=True):
+    st.markdown("""
+    This tool strictly follows a **protocol-based approach**.  
+    It does **not make any decisions outside the protocol logic**.  
+    Always use **clinical judgment** in conjunction with this tool.  
+    Rounding is done automatically as per clinical safety (whole units for bolus, 1 decimal for infusion rate).
+
+    ### ✅ How to Use:
+
+    1. **When starting a new infusion**, only fill **Initial Blood Sugar** and press Enter.  
+       A **bolus dose** and **infusion rate** will be displayed.  
+       *Note: Bolus is OPTIONAL.*
+
+    2. **Once started**, check blood sugar **at least once every hour**.
+
+    3. For **subsequent management**, keep the **Initial Blood Sugar** space **empty**,  
+       and fill in:
+       - **Present Blood Sugar**  
+       - **Last Blood Sugar** (measured usually one hour before)  
+       - **Current Intravenous Insulin Infusion Rate**  
+       
+       Then press Enter to get the updated infusion rate.
+    """)
+
 st.title("IV Insulin Infusion Calculator")
 
 st.markdown("""
