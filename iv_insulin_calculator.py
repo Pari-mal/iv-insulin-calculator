@@ -13,20 +13,22 @@ with st.expander("ℹ️ How to Use This App", expanded=True):
 
     ### ✅ How to Use:
 
-    1. **When starting a new infusion**, only fill **Initial Blood Sugar** and press Enter.  
-       A **bolus dose** and **infusion rate** will be displayed.  
-       *Note: Bolus is OPTIONAL.*
+1. **When starting a new infusion**, only fill **Initial Blood Sugar** and press Enter.  
+   A **bolus dose** and **infusion rate** will be displayed.  
+   *Note: Bolus is OPTIONAL.*
 
-    2. **Once started**, check blood sugar **at least once every hour**.
+2. **Once started**, check blood sugar **at least once every hour**.
 
-    3. For **subsequent management**, keep the **Initial Blood Sugar** space **empty**,  
-       and fill in:
-       - **Present Blood Sugar**  
-       - **Last Blood Sugar** (measured usually one hour before)  
-       - **Current Intravenous Insulin Infusion Rate**  
-       
-       Then press Enter to get the updated infusion rate.
-    """)
+3. For **subsequent management**, keep the **Initial Blood Sugar** space **empty**,  
+   and fill in:
+   - **Present Blood Sugar**  
+   - **Last Blood Sugar** (measured usually one hour before)  
+   - **Current Intravenous Insulin Infusion Rate**  
+   
+   Then press Enter to get the updated infusion rate.
+
+4. This app assumes that **50 units of regular insulin is dissolved in 50 ml of normal saline solution**,  
+   so **1 ml = 1 unit**.
 
 st.title("IV Insulin Infusion Calculator")
 
